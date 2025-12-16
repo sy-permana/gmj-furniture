@@ -1,4 +1,5 @@
 <script lang="ts">
+  import heroBg from '$lib/assets/images/hero-bg.png?enhanced';
   // No props or state needed
 </script>
 
@@ -24,8 +25,8 @@
     </div>
     <div class="imageWrapper">
       <!-- Ensure the image assumes the path from static folder -->
-      <img 
-        src="/images/hero-bg.png" 
+      <enhanced:img 
+        src={heroBg} 
         alt="Luxury Rattan Living Room in Bali" 
         class="heroImage"
       />

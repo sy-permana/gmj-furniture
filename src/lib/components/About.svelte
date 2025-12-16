@@ -1,11 +1,12 @@
 <script lang="ts">
+  import artisanImg from '$lib/assets/images/about-artisan.png?enhanced';
   // No script needed
 </script>
 
 <section class="about" id="about">
   <div class="container aboutContainer">
     <div class="imageParams">
-       <img src="/images/about-artisan.png" alt="Artisan Weaving" class="aboutImage" />
+       <enhanced:img src={artisanImg} alt="Artisan Weaving" class="aboutImage" />
     </div>
     <div class="content">
       <h2 class="title">Rooted in Tradition</h2>

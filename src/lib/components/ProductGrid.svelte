@@ -13,7 +13,7 @@
       {#each products as product (product.id)}
         <div class="card">
           <div class="imageContainer">
-            <img src={product.image} alt={product.name} class="productImg" />
+            <enhanced:img src={product.image} alt={product.name} class="productImg" />
           </div>
           <div class="details">
             <h3 class="productName">{product.name}</h3>

@@ -1,9 +1,12 @@
+import lunaChair from '$lib/assets/images/luna-chair.png?enhanced';
+import terraBench from '$lib/assets/images/terra-bench.png?enhanced';
+
 export interface Product {
   id: number;
   name: string;
   category: string;
   price: string;
-  image: string;
+  image: any; // Allow enhanced image object
   description: string;
 }
 
@@ -13,7 +16,7 @@ export const products: Product[] = [
     name: "Luna Lounge Chair",
     category: "Chairs",
     price: "$450",
-    image: "/images/luna-chair.png", 
+    image: lunaChair, 
     description: "Hand-woven rattan lounge chair with a curved organic silhouette. Perfect for sunrooms or living areas."
   },
   {
@@ -21,7 +24,7 @@ export const products: Product[] = [
     name: "Terra Woven Bench",
     category: "Seating",
     price: "$280",
-    image: "/images/terra-bench.png",
+    image: terraBench,
     description: "Minimalist bench featuring durable teak wood frame and intricate rattan webbing."
   },
   {
@@ -29,7 +32,7 @@ export const products: Product[] = [
     name: "Bali Credenza",
     category: "Storage",
     price: "$890",
-    image: "/images/terra-bench.png", // Reusing for consistency in demo
+    image: terraBench, // Reusing for consistency in demo
     description: "Elegant storage unit with breathable woven doors and solid wood construction."
   },
   {
@@ -37,7 +40,7 @@ export const products: Product[] = [
     name: "Surya Dining Set",
     category: "Dining",
     price: "$2,200",
-    image: "/images/luna-chair.png", // Reusing for demo
+    image: lunaChair, // Reusing for demo
     description: "Complete dining set including a large oval table and 6 classic rattan dining chairs."
   },
   {
@@ -45,7 +48,7 @@ export const products: Product[] = [
     name: "Nusa Pendant Light",
     category: "Lighting",
     price: "$150",
-    image: "/images/luna-chair.png", // Reusing for demo
+    image: lunaChair, // Reusing for demo
     description: "Large domed pendant light woven from natural seagrass to create warm ambient lighting."
   },
   {
@@ -53,7 +56,7 @@ export const products: Product[] = [
     name: "Ubud Coffee Table",
     category: "Tables",
     price: "$320",
-    image: "/images/terra-bench.png", // Reusing for demo
+    image: terraBench, // Reusing for demo
     description: "Round coffee table with a sturdy rattan base and tempered glass top."
   }
 ];
